@@ -1,0 +1,442 @@
+{
+    "description": "                  \n                ",
+    "playlist": [
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/lUGmHThO.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/lUGmHThO-AgylS15n.mp4",
+                    "duration": 120,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/lUGmHThO-8LSW5F2t.mp4",
+                    "duration": 120,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/lUGmHThO-PA9rXzRh.mp4",
+                    "duration": 120,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/lUGmHThO-p3ZNjGCa.mp4",
+                    "duration": 120,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/lUGmHThO-pSu3VlhO.m4a",
+                    "duration": 120,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/lUGmHThO-120.vtt"
+                }
+            ],
+            "mediaid": "lUGmHThO",
+            "description": "When a detective (Keanu Reeves) starts to investigate his partner\u2019s shocking death, he uncovers disturbing evidence of police corruption and a dangerous secret involving an unlikely young woman (Ana De Armas).",
+            "pubdate": 1449848295,
+            "title": "Exposed",
+            "link": "//content.jwplatform.com/previews/lUGmHThO",
+            "image": "//content.jwplatform.com/thumbs/lUGmHThO-720.jpg",
+            "tags": "thriller",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/DqGECHhT.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/DqGECHhT-AgylS15n.mp4",
+                    "duration": 109,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/DqGECHhT-8LSW5F2t.mp4",
+                    "duration": 109,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/DqGECHhT-PA9rXzRh.mp4",
+                    "duration": 109,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/DqGECHhT-p3ZNjGCa.mp4",
+                    "duration": 109,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/DqGECHhT-pSu3VlhO.m4a",
+                    "duration": 109,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/DqGECHhT-120.vtt"
+                }
+            ],
+            "mediaid": "DqGECHhT",
+            "description": "The story follows a one-time bullied geek who grew up to be a lethal CIA agent (Johnson), coming home for his high school reunion. Claiming to be on a top-secret case, he enlists the help of the former \u201cbig man on campus\u201d (Hart), now an accountant who misses his glory days. But before the staid numbers-cruncher realizes what he\u2019s getting into, it\u2019s too late to get out, as his increasingly unpredictable new friend drags him through a world of shoot-outs, double-crosses and espionage that could get them both killed in more ways than he can count.",
+            "pubdate": 1449848295,
+            "title": "Central Intelligence",
+            "link": "//content.jwplatform.com/previews/DqGECHhT",
+            "image": "//content.jwplatform.com/thumbs/DqGECHhT-720.jpg",
+            "tags": "action and adventure, comedy",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/92XQ91bP.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/92XQ91bP-AgylS15n.mp4",
+                    "duration": 138,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/92XQ91bP-8LSW5F2t.mp4",
+                    "duration": 138,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/92XQ91bP-PA9rXzRh.mp4",
+                    "duration": 138,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/92XQ91bP-p3ZNjGCa.mp4",
+                    "duration": 138,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/92XQ91bP-pSu3VlhO.m4a",
+                    "duration": 138,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/92XQ91bP-120.vtt"
+                }
+            ],
+            "mediaid": "92XQ91bP",
+            "description": "Star Wars: The Force Awakens opens in theaters December 18, 2015. Star Wars: The Force Awakens is directed by J.J. Abrams from a screenplay by Lawrence Kasdan & Abrams, and features a cast including actors John Boyega, Daisy Ridley, Adam Driver, Oscar Isaac, Andy Serkis, Academy Award winner Lupita Nyong\u2019o, Gwendoline Christie, Crystal Clarke, Pip Andersen, Domhnall Gleeson, and Max von Sydow.",
+            "pubdate": 1449848296,
+            "title": "Star Wars: The Force Awakens",
+            "link": "//content.jwplatform.com/previews/92XQ91bP",
+            "image": "//content.jwplatform.com/thumbs/92XQ91bP-720.jpg",
+            "tags": "action and adventure, science fiction",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/127Vi5Xd.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/127Vi5Xd-AgylS15n.mp4",
+                    "duration": 90,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/127Vi5Xd-8LSW5F2t.mp4",
+                    "duration": 90,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/127Vi5Xd-PA9rXzRh.mp4",
+                    "duration": 90,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/127Vi5Xd-p3ZNjGCa.mp4",
+                    "duration": 90,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/127Vi5Xd-pSu3VlhO.m4a",
+                    "duration": 90,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/127Vi5Xd-120.vtt"
+                }
+            ],
+            "mediaid": "127Vi5Xd",
+            "description": "In an adaptation of Patricia Highsmith\u2019s seminal novel The Price of Salt, CAROL follows two women from very different backgrounds who find themselves in an unexpected love affair in 1950s New York. As conventional norms of the time challenge their undeniable attraction, an honest story emerges to reveal the resilience of the heart in the face of change.",
+            "pubdate": 1449848295,
+            "title": "Carol",
+            "link": "//content.jwplatform.com/previews/127Vi5Xd",
+            "image": "//content.jwplatform.com/thumbs/127Vi5Xd-720.jpg",
+            "tags": "drama, romance",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/wVwRwdZR.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/wVwRwdZR-AgylS15n.mp4",
+                    "duration": 149,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/wVwRwdZR-8LSW5F2t.mp4",
+                    "duration": 149,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/wVwRwdZR-PA9rXzRh.mp4",
+                    "duration": 149,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/wVwRwdZR-p3ZNjGCa.mp4",
+                    "duration": 149,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/wVwRwdZR-pSu3VlhO.m4a",
+                    "duration": 149,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/wVwRwdZR-120.vtt"
+                }
+            ],
+            "mediaid": "wVwRwdZR",
+            "description": "Four small-town losers stumble across an alien crash site containing an incredible battle suit. One round of bickering and a quick scuffle later, they each find themselves wearing a piece of the suit, which has genetically bound itself to them. Now, they must work together as one to save humanity.",
+            "pubdate": 1449848295,
+            "title": "Lazer Team",
+            "link": "//content.jwplatform.com/previews/wVwRwdZR",
+            "image": "//content.jwplatform.com/thumbs/wVwRwdZR-720.jpg",
+            "tags": "action and adventure, comedy, science fiction",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/co3rxpv9.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/co3rxpv9-AgylS15n.mp4",
+                    "duration": 153,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/co3rxpv9-8LSW5F2t.mp4",
+                    "duration": 153,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/co3rxpv9-PA9rXzRh.mp4",
+                    "duration": 153,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/co3rxpv9-p3ZNjGCa.mp4",
+                    "duration": 153,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/co3rxpv9-pSu3VlhO.m4a",
+                    "duration": 153,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/co3rxpv9-120.vtt"
+                }
+            ],
+            "mediaid": "co3rxpv9",
+            "description": "\u201cThe Nice Guys\u201d takes place in 1970s Los Angeles, when down-on-his-luck private eye Holland March (Gosling) and hired enforcer Jackson Healy (Crowe) must work together to solve the case of a missing girl and the seemingly unrelated death of a porn star. During their investigation, they uncover a shocking conspiracy that reaches up to the highest circles of power.",
+            "pubdate": 1449848296,
+            "title": "The Nice Guys",
+            "link": "//content.jwplatform.com/previews/co3rxpv9",
+            "image": "//content.jwplatform.com/thumbs/co3rxpv9-720.jpg",
+            "tags": "action and adventure, comedy",
+            "custom": {}
+        },
+        {
+            "sources": [
+                {
+                    "type": "application/vnd.apple.mpegurl",
+                    "file": "//content.jwplatform.com/manifests/4yN3Zspm.m3u8"
+                },
+                {
+                    "height": 180,
+                    "width": 320,
+                    "file": "//content.jwplatform.com/videos/4yN3Zspm-AgylS15n.mp4",
+                    "duration": 97,
+                    "label": "H.264 320px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 270,
+                    "width": 480,
+                    "file": "//content.jwplatform.com/videos/4yN3Zspm-8LSW5F2t.mp4",
+                    "duration": 97,
+                    "label": "H.264 480px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 406,
+                    "width": 720,
+                    "file": "//content.jwplatform.com/videos/4yN3Zspm-PA9rXzRh.mp4",
+                    "duration": 97,
+                    "label": "H.264 720px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": 720,
+                    "width": 1280,
+                    "file": "//content.jwplatform.com/videos/4yN3Zspm-p3ZNjGCa.mp4",
+                    "duration": 97,
+                    "label": "H.264 1280px",
+                    "type": "video/mp4"
+                },
+                {
+                    "height": -1,
+                    "width": -1,
+                    "file": "//content.jwplatform.com/videos/4yN3Zspm-pSu3VlhO.m4a",
+                    "duration": 97,
+                    "label": "AAC Audio",
+                    "type": "audio/mp4"
+                }
+            ],
+            "tracks": [
+                {
+                    "kind": "thumbnails",
+                    "file": "//assets-jpcust.jwpsrv.com/strips/4yN3Zspm-120.vtt"
+                }
+            ],
+            "mediaid": "4yN3Zspm",
+            "description": "For their fifth fully-animated feature-film collaboration, Illumination Entertainment and Universal Pictures present The Secret Life of Pets, a comedy about the lives our pets lead after we leave for work or school each day.",
+            "pubdate": 1449848296,
+            "title": "The Secret Life of Pets",
+            "link": "//content.jwplatform.com/previews/4yN3Zspm",
+            "image": "//content.jwplatform.com/thumbs/4yN3Zspm-720.jpg",
+            "tags": "animation, comedy",
+            "custom": {}
+        }
+    ],
+    "title": "Featured Trailers",
+    "kind": "manual",
+    "feedid": "WXu7kuaW"
+}

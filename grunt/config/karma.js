@@ -1,6 +1,13 @@
 module.exports = {
+
+    watch: {
+        configFile: 'karma.conf.js',
+        singleRun:  false,
+        autoWatch:  true
+    },
+
     unit: {
-        configFile: 'test/karma.conf.js',
+        configFile: 'karma.conf.js',
         singleRun:  true
     }
 };
