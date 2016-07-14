@@ -110,7 +110,8 @@
                 feedId          = scope.vm.feed.feedid,
                 forEach         = angular.forEach,
                 $               = element[0].querySelector.bind(element[0]),
-                resizeDebounced = utils.debounce(resize, 100);
+                resizeDebounced = utils.debounce(resize, 100),
+                timeoutId;
 
             scope.vm.slideLeft    = slideLeft;
             scope.vm.slideRight   = slideRight;
@@ -153,7 +154,8 @@
                     index = state.index;
                 });
 
-                $timeout(resize, 50);
+                timeoutId = $timeout(resize, 50);
+                resize();
             }
 
             /**
@@ -162,6 +164,9 @@
             function destroy () {
 
                 window.removeEventListener('resize', resizeDebounced);
+
+                $timeout.cancel(timeoutId);
+                resizeDebounced.cancel();
 
                 if (!feedId) {
                     return;

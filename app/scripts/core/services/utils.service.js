@@ -24,8 +24,11 @@
      * @ngdoc service
      * @name app.core.utils
      * @description Collection of utility functions
+     *
+     * @requires $timeout
      */
-    function utils () {
+    utils.$inject = ['$timeout'];
+    function utils ($timout) {
 
         this.flatMap                = flatMap;
         this.ucfirst                = ucfirst;
@@ -149,11 +152,15 @@
                 var thisArg = this,
                     args    = arguments;
 
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(function () {
+                $timout.cancel(timeoutId);
+                timeoutId = $timout(function () {
                     fn.apply(thisArg, args);
                 }, wait);
             }
+
+            debounced.cancel = function () {
+                $timout.cancel(timeoutId);
+            };
 
             return debounced;
         }
