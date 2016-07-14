@@ -17,102 +17,145 @@
 describe('jwCardSlider', function () {
 
     var feed = getFixture('feed'),
-        element, $scope, $compile;
+        element, $scope, $compile, $timeout, slides;
 
     beforeEach(function () {
         module('app');
         module('app.partials');
     });
 
-    beforeEach(inject(function ($rootScope, _$compile_) {
+    beforeEach(inject(function ($rootScope, _$compile_, _$timeout_) {
         $scope      = $rootScope.$new();
         $scope.feed = feed;
         $compile    = _$compile_;
+        $timeout    = _$timeout_;
     }));
 
     afterEach(function () {
         document.body.removeChild(element[0]);
         element = null;
+        slides  = null;
     });
+
+    function resizeElement (width) {
+        element.css('width', width + 'px');
+        window.dispatchEvent(new Event('resize'));
+        $timeout.flush();
+    }
 
     function compileDirective (htmlText) {
         element = $compile(htmlText)($scope);
-        $scope.$apply();
         document.body.appendChild(element[0]);
+        element[0].style.width = '400px';
+        $scope.$digest();
+        $timeout.flush();
     }
 
-    it('should render an card slider', function () {
+    it('should render a card slider', function () {
         compileDirective('<jw-card-slider feed="feed"></jw-card-slider>');
         expect(element.hasClass('jw-card-slider')).toBeTruthy();
         expect(element.hasClass('jw-card-slider--default')).toBeTruthy();
     });
 
-    it('should render an featured card slider', function () {
+    it('should render a featured card slider', function () {
         compileDirective('<jw-card-slider feed="feed" featured="true"></jw-card-slider>');
         expect(element.hasClass('jw-card-slider')).toBeTruthy();
         expect(element.hasClass('jw-card-slider--featured')).toBeTruthy();
     });
 
-    it('should show add the `is-visible` className to the first slide', function (done) {
+    it('should add `is-visible` className to the first slide', function () {
         compileDirective('<jw-card-slider feed="feed" visible-items="1"></jw-card-slider>');
-        setTimeout(function () { // resize is delayed
-            var slides = element[0].querySelectorAll('.jw-card-slider-slide');
-            expect(slides[0].classList.contains('is-visible')).toBeTruthy();
-            expect(slides[1].classList.contains('is-visible')).toBeFalsy();
-            done();
-        }, 150);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeFalsy();
     });
 
-    it('should show add the `is-visible` className to the first and second slide', function (done) {
+    it('should add `is-visible` className to the first and second slide', function () {
         compileDirective('<jw-card-slider feed="feed" visible-items="2"></jw-card-slider>');
-        setTimeout(function () { // resize is delayed
-            var slides = element[0].querySelectorAll('.jw-card-slider-slide');
-            expect(slides[0].classList.contains('is-visible')).toBeTruthy();
-            expect(slides[1].classList.contains('is-visible')).toBeTruthy();
-            expect(slides[2].classList.contains('is-visible')).toBeFalsy();
-            done();
-        }, 150);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[2].classList.contains('is-visible')).toBeFalsy();
     });
 
-    it('should slide to the right', function (done) {
+    it('should slide to the right', function () {
         compileDirective('<jw-card-slider feed="feed" visible-items="1"></jw-card-slider>');
-        setTimeout(function () { // resize is delayed
-            // before click
-            var slides = element[0].querySelectorAll('.jw-card-slider-slide');
-            expect(slides[0].classList.contains('is-visible')).toBeTruthy();
-            expect(slides[1].classList.contains('is-visible')).toBeFalsy();
-
-            // click
-            element[0].querySelector('.jw-card-slider-button--right').click();
-            expect(slides[0].classList.contains('is-visible')).toBeFalsy();
-            expect(slides[1].classList.contains('is-visible')).toBeTruthy();
-            done();
-        }, 150);
+        // before click
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeFalsy();
+        // click
+        element[0].querySelector('.jw-card-slider-button--right').click();
+        expect(slides[0].classList.contains('is-visible')).toBeFalsy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
     });
 
-    it('should slide to the left', function (done) {
+    it('should slide to the left', function () {
         compileDirective('<jw-card-slider feed="feed" visible-items="1"></jw-card-slider>');
-        setTimeout(function () { // resize is delayed
-            // before click
-            var slides = element[0].querySelectorAll('.jw-card-slider-slide');
-            element[0].querySelector('.jw-card-slider-button--right').click();
-            expect(slides[0].classList.contains('is-visible')).toBeFalsy();
-            expect(slides[1].classList.contains('is-visible')).toBeTruthy();
-
-            // click
-            element[0].querySelector('.jw-card-slider-button--left').click();
-            expect(slides[0].classList.contains('is-visible')).toBeTruthy();
-            expect(slides[1].classList.contains('is-visible')).toBeFalsy();
-            done();
-        }, 150);
+        // before click
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        element[0].querySelector('.jw-card-slider-button--right').click();
+        expect(slides[0].classList.contains('is-visible')).toBeFalsy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        // click
+        element[0].querySelector('.jw-card-slider-button--left').click();
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeFalsy();
     });
 
-    it('should add spacing between slides', function (done) {
+    it('should add spacing between slides', function () {
         compileDirective('<jw-card-slider feed="feed" visible-items="2" spacing="20"></jw-card-slider>');
-        setTimeout(function () { // resize is delayed
-            var slides = element[0].querySelectorAll('.jw-card-slider-slide');
-            expect(slides[0].style.marginRight).toEqual('20px');
-            done();
-        }, 150);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].style.marginRight).toEqual('20px');
+    });
+
+    it('should be responsive when passing an array to `visible-items` attribute in 400px', function () {
+        compileDirective('<jw-card-slider feed="feed" visible-items="[1,2,3,4,5]" spacing="20"></jw-card-slider>');
+        resizeElement(400);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeFalsy();
+    });
+
+    it('should be responsive when passing an array to `visible-items` attribute in 700px', function () {
+        compileDirective('<jw-card-slider feed="feed" visible-items="[1,2,3,4,5]" spacing="20"></jw-card-slider>');
+        resizeElement(700);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[2].classList.contains('is-visible')).toBeFalsy();
+    });
+
+    it('should be responsive when passing an array to `visible-items` attribute in 1000px', function () {
+        compileDirective('<jw-card-slider feed="feed" visible-items="[1,2,3,4,5]" spacing="20"></jw-card-slider>');
+        resizeElement(1000);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[2].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[3].classList.contains('is-visible')).toBeFalsy();
+    });
+
+    it('should be responsive when passing an array to `visible-items` attribute in 1500px', function () {
+        compileDirective('<jw-card-slider feed="feed" visible-items="[1,2,3,4,5]" spacing="20"></jw-card-slider>');
+        resizeElement(1500);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[2].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[3].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[4].classList.contains('is-visible')).toBeFalsy();
+    });
+
+    it('should be responsive when passing an array to `visible-items` attribute in 2000px', function () {
+        compileDirective('<jw-card-slider feed="feed" visible-items="[1,2,3,4,5]" spacing="20"></jw-card-slider>');
+        resizeElement(2000);
+        slides = element[0].querySelectorAll('.jw-card-slider-slide');
+        expect(slides[0].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[1].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[2].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[3].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[4].classList.contains('is-visible')).toBeTruthy();
+        expect(slides[5].classList.contains('is-visible')).toBeFalsy();
     });
 });
