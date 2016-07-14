@@ -26,7 +26,8 @@ module.exports = function (config) {
             'app/views/**/*.html',
             'test/fixtures/feed.json',
             'test/unit/helpers/*.js',
-            'test/unit/**/*Spec.js'
+            'test/unit/**/*Spec.js',
+            { pattern: 'app/images/*', included: false, served: true}
         ],
 
         exclude: [
